@@ -34,7 +34,7 @@ function App() {
    const [questionsAnswered, setQuestionsAnswered] = useState([])
    const [isLogin, setIsLogin] = useState(true)
    
-   const verify = questionsAnswered.map(item => item[0])
+   const verify = questionsAnswered.map(item => item[1])
    
    return (
       <ContainerApp hits={hits}>
@@ -65,7 +65,7 @@ function App() {
                })}
 
                <FooterApp data-test="footer">
-                  {verify.includes('/src/assets/images/icone_erro.png') &&
+                  {verify.includes('no-btn') &&
                      verify.length === cards.length && (
                         <div data-test="finish-text">
                            <span>
@@ -75,7 +75,7 @@ function App() {
                         </div>
                      )}
 
-                  {!verify.includes('/src/assets/images/icone_erro.png') &&
+                  {!verify.includes('no-btn') &&
                      verify.length === cards.length && (
                         <div data-test="finish-text">
                            <span>
