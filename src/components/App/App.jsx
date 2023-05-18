@@ -65,7 +65,7 @@ function App() {
                })}
 
                <FooterApp data-test="footer">
-                  {verify.includes('no-btn') &&
+                  {verify.includes('no-icon') &&
                      verify.length === cards.length && (
                         <div data-test="finish-text">
                            <span>
