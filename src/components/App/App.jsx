@@ -75,7 +75,7 @@ function App() {
                         </div>
                      )}
 
-                  {!verify.includes('no-btn') &&
+                  {!verify.includes('no-icon') &&
                      verify.length === cards.length && (
                         <div data-test="finish-text">
                            <span>
