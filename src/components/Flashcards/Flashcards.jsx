@@ -71,7 +71,7 @@ function Flashcards({
                      data-test="no-btn"
                      index="notRemember"
                      onClick={() => {
-                        setQuestionsAnswered([...questionsAnswered, [notRememberIcon, 'no-btn']])
+                        setQuestionsAnswered([...questionsAnswered, [notRememberIcon, 'no-icon']])
                         setHits(hits + 1)
                         setExec(false)
                         setFace('firstFace')
@@ -84,7 +84,7 @@ function Flashcards({
                      data-test="partial-btn"
                      index="almostNotRemember"
                      onClick={() => {
-                        setQuestionsAnswered([...questionsAnswered, [almostIcon, 'partial-btn']])
+                        setQuestionsAnswered([...questionsAnswered, [almostIcon, 'partial-icon']])
                         setHits(hits + 1)
                         setExec(false)
                         setFace('firstFace')
@@ -97,7 +97,7 @@ function Flashcards({
                      data-test="zap-btn"
                      index="remember"
                      onClick={() => {
-                        setQuestionsAnswered([...questionsAnswered, [rememberIcon, 'zap-btn']])
+                        setQuestionsAnswered([...questionsAnswered, [rememberIcon, 'zap-icon']])
                         setHits(hits + 1)
                         setExec(false)
                         setFace('firstFace')
